@@ -11,6 +11,7 @@ public class FBGate extends Observer{
 
     @Override
     public void update() {
+        if(subject.getPriority()==1||subject.getPriority()==4)
         System.out.println(subject.getMessage()+"New message was sending to Facebook");
     }
 }

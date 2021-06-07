@@ -11,6 +11,7 @@ public class FaxGate extends Observer{
 
     @Override
     public void update() {
+        if(subject.getPriority()==1|| subject.getPriority()==3)
         System.out.println(subject.getMessage()+"New message was sending to Fax");
     }
 }
