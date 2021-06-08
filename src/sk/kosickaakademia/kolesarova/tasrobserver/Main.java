@@ -14,14 +14,14 @@ public class Main {
         new FaxGate(subject);
         new FBGate(subject);
 
-        subject.setPriority(1);
-        subject.setMessage("Ide mi to. \n");
+        //subject.setPriority(1);
+        subject.setMessage("Ide mi to. \n",1);
         System.out.println();
-        subject.setPriority(3);
-        subject.setMessage("Uvidime ako je to s prioritou. \n");
+        //subject.setPriority(3);
+        subject.setMessage("Uvidime ako je to s prioritou. \n",3);
         System.out.println();
-        subject.setPriority(2);
-        subject.setMessage("Aj priorita funguje. \n");
+        //subject.setPriority(2);
+        subject.setMessage("Aj priorita funguje. \n",2);
 
     }
 }

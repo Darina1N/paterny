@@ -14,14 +14,15 @@ public class Tasr {
         return message;
     }
 
-    public void setMessage(String message) {
+    public void setMessage(String message, int priority) {
         this.message = message;
+        this.priority=priority;
         notifyAllTasrObserver();
     }
 
-    public void setPriority(int priority) {
+   /* public void setPriority(int priority) {
         this.priority = priority;
-    }
+    }*/
 
     public int getPriority() {
         return priority;
@@ -35,5 +36,9 @@ public class Tasr {
 
     public void attach(Observer observer){
         list.add(observer);
+    }
+
+    public void remove(Observer observer){
+        list.remove(observer);
     }
 }
